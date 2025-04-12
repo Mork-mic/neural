@@ -1,0 +1,14 @@
+/home/mork/RiderProjects/neural/neural/bin/Debug/net9.0/neural
+/home/mork/RiderProjects/neural/neural/bin/Debug/net9.0/neural.deps.json
+/home/mork/RiderProjects/neural/neural/bin/Debug/net9.0/neural.runtimeconfig.json
+/home/mork/RiderProjects/neural/neural/bin/Debug/net9.0/neural.dll
+/home/mork/RiderProjects/neural/neural/bin/Debug/net9.0/neural.pdb
+/home/mork/RiderProjects/neural/neural/obj/Debug/net9.0/neural.GeneratedMSBuildEditorConfig.editorconfig
+/home/mork/RiderProjects/neural/neural/obj/Debug/net9.0/neural.AssemblyInfoInputs.cache
+/home/mork/RiderProjects/neural/neural/obj/Debug/net9.0/neural.AssemblyInfo.cs
+/home/mork/RiderProjects/neural/neural/obj/Debug/net9.0/neural.csproj.CoreCompileInputs.cache
+/home/mork/RiderProjects/neural/neural/obj/Debug/net9.0/neural.dll
+/home/mork/RiderProjects/neural/neural/obj/Debug/net9.0/refint/neural.dll
+/home/mork/RiderProjects/neural/neural/obj/Debug/net9.0/neural.pdb
+/home/mork/RiderProjects/neural/neural/obj/Debug/net9.0/neural.genruntimeconfig.cache
+/home/mork/RiderProjects/neural/neural/obj/Debug/net9.0/ref/neural.dll
