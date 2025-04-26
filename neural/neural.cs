@@ -3,6 +3,8 @@ namespace neural;
 public class Neuron
 {
     public int Id { get; set; }
+    
+    public string Name { get; set; }
     public int Layer { get; set; }
     public int SynapsysConunt { get; set; }
     public double Value { get; set; }
@@ -43,6 +45,15 @@ static class Helper
         return (ideal - actual) * fIN(actual);
     }
 
+    /*public static double DeltaH(double ideal, double actual)
+    {
+        
+    }
+
+    public static double E(Neuron H)
+    {
+        
+    }*/
     public static double Grad(double delta, double value)
     {
         return value * delta;
@@ -51,6 +62,52 @@ static class Helper
     public static double DeltaW(double ideal, double actual, double value)
     {
         return 0.7 * Grad(deltaO(ideal, actual), value) + 0.3 * 0;
+    }
+    public static double deltaH(Neuron outPutN, Neuron inPutN, double ideal)
+
+    {
+
+        double sum = 0;
+
+        foreach (var sin in outPutN.Connections)
+
+        {
+
+            sum += sin.Weight * deltaO(ideal, sin.OutputNeuron.Value);
+
+        }
+
+        var x = fIN(outPutN.Value) * sum;
+
+        return x;
+
+    }
+    public static double DeltaW(double ideal, Neuron outPutN, Neuron inPutN)
+
+    {
+
+        if (outPutN.Connections.Count > 0)
+
+        {
+
+            var delta = deltaH(outPutN, inPutN, ideal);
+
+            var grad = Grad(delta, inPutN.Value);
+
+            return 0.7 * grad + 0.3 * 0;
+
+        }
+
+        else
+
+        {
+
+            var delta = deltaO(ideal, outPutN.Value);
+
+            return 0.7 * Grad(delta, inPutN.Value) + 0.3 * 0;
+
+        }
+
     }
     
     public static Neuron[][] GenerateNeurons(Neuron[][] neurons)

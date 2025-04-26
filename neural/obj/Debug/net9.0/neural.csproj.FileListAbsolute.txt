@@ -12,3 +12,4 @@
 /home/mork/RiderProjects/neural/neural/obj/Debug/net9.0/neural.pdb
 /home/mork/RiderProjects/neural/neural/obj/Debug/net9.0/neural.genruntimeconfig.cache
 /home/mork/RiderProjects/neural/neural/obj/Debug/net9.0/ref/neural.dll
+/home/mork/RiderProjects/neural/neural/obj/Debug/net9.0/neural.sourcelink.json
